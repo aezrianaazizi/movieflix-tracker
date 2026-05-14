@@ -1,0 +1,145 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* LOGIN */
+.login-container {
+    background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1170&auto=format&fit=crop') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.login-box {
+    position: relative;
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    z-index: 2;
+}
+
+.logo {
+    color: #E50914 !important;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #E50914;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #b20710;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* HERO */
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1170&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+}
+
+/* TITLES */
+.section-title {
+    color: #E50914;
+    font-weight: bold;
+}
+
+/* DASHBOARD */
+.dashboard-card {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card i {
+    font-size: 2rem;
+    color: #E50914;
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* MOVIES */
+.movie-card {
+    background: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+/* FAVORITES */
+.favorite-card {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
